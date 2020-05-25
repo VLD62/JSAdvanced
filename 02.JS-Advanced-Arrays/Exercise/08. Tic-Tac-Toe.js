@@ -39,18 +39,17 @@ function ticTacToe(input){
     } 
 
     while (input.length > 0){
-        counter++;
         cmd = (input.shift()).split(" ");
         if(!dashboard[cmd[0]][cmd[1]]){
             if (counter % 2 == 0){
-                dashboard[cmd[0]][cmd[1]] = "O";
-                if (checkMatrixForWinner(dashboard, "O")){
-                    winner = "O";
-                }
-            } else {
                 dashboard[cmd[0]][cmd[1]] = "X"
                 if (checkMatrixForWinner(dashboard, "X")) {
                     winner = "X";
+                }
+            } else {
+                dashboard[cmd[0]][cmd[1]] = "O";
+                if (checkMatrixForWinner(dashboard, "O")){
+                    winner = "O";
                 }
             }
             if (winner != "NO") {
@@ -58,12 +57,32 @@ function ticTacToe(input){
                 break;
             }
         } else {
-            if (checkArrForString(input,false)){
-                console.log("This place is already taken. Please choose another!")
-            } else {
-                console.log("The game ended! Nobody wins :(")
+            console.log("This place is already taken. Please choose another!")
+            if(input.length > 0) {
+                cmd = (input.shift()).split(" ");
+                if(!dashboard[cmd[0]][cmd[1]]){
+                    if (counter % 2 == 0){
+                        dashboard[cmd[0]][cmd[1]] = "X"
+                        if (checkMatrixForWinner(dashboard, "X")) {
+                            winner = "X";
+                        }
+                    } else {
+                        dashboard[cmd[0]][cmd[1]] = "O";
+                        if (checkMatrixForWinner(dashboard, "O")){
+                            winner = "O";
+                        }
+                    }
+                    if (winner != "NO") {
+                        console.log(`Player ${winner} wins!`)
+                        break;
+                    }
+                }
             }
         }
+        counter++;
+    }
+    if (!checkArrForString(dashboard,false)){
+        console.log("The game ended! Nobody wins :(")
     }
     for (let i = 0; i < dashboard.length; i++){
         console.log(dashboard[i].join("\t"))
@@ -73,11 +92,12 @@ function ticTacToe(input){
 
 ticTacToe(["0 1",
 "0 0",
-"0 2", 
+"0 2",
 "2 0",
 "1 0",
-"1 1",
 "1 2",
-"2 2",
+"1 1",
 "2 1",
-"0 0"])
+"2 2",
+"0 0"]
+)

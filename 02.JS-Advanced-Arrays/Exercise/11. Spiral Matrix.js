@@ -9,7 +9,6 @@ function spiralMatrix(n) {
         }
         result.push(rs);
     }
-    console.log(result)
     let x = 0;
     let y = 0;
     let step = 0;
