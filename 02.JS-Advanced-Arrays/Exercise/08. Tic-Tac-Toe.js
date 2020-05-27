@@ -57,6 +57,9 @@ function ticTacToe(input){
                 break;
             }
         } else {
+            if (!checkArrForString(dashboard,false)){
+                break;
+            }
             console.log("This place is already taken. Please choose another!")
             if(input.length > 0) {
                 cmd = (input.shift()).split(" ");
