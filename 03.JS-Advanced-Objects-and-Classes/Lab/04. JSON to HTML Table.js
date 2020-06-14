@@ -22,7 +22,7 @@ function fromJSONToHTMLTable(input){
         result += "</tr>\n"
     });
     result += "</table>";    
-    return result;
+    console.log(result);
 }
 
 console.log(fromJSONToHTMLTable(['[{"Name":"Tomatoes & Chips","Price":2.35},{"Name":"J&B Chocolate","Price":0.96}]']));

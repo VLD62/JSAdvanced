@@ -1,25 +1,26 @@
-function createArticle() {
-	const createTitleInput = document.getElementById('createTitle');
-	const createContentTextArea = document.getElementById('createContent');
-	const articleSection = document.getElementById('articles');
-	
-	const titleInputValue = createTitleInput.value;
-	const contentValue = createContentTextArea.value;
+function createArticle(){
+    const articleTitleInput = document.getElementById("createArticle");
+    const articleContentInput = document.getElementById("createContent");
+    const articleList = document.getElementById("articles");
 
-	if (!titleInputValue || !contentValue){
-		return;
-	}
-	const newArticle = document.createElement('article');
-	const articleHeading = document.createElement('h3');
-	const articleParagraph = document.createElement('p');
+    const title = articleTitleInput.value;
+    const content = articleContentInput.value;
 
-	newArticle.appendChild(articleHeading);
-	newArticle.appendChild(articleParagraph);
+    if (title !== "" && content !== ""){
+        const newArticle = document.createElement('article');
+        const newHeading = document.createElement('h3');
+        const newParagraph = document.createElement('p');
 
-	articleHeading.innerText = titleInputValue;
-	articleParagraph.innerText = contentValue;
+        newArticle.appendChild(newHeading);
+        newArticle.appendChild(newParagraph);
 
-	articleSection.appendChild(newArticle);
-	createTitleInput.value = '';
-	createContentTextArea.value = '';
+        newHeading.innerText =  title;
+        newParagraph.innerText = content;
+
+        articleList.appendChild(newArticle);
+        
+        articleTitleInput.value = "";
+        articleContentInput.value = "";
+
+    }
 }
