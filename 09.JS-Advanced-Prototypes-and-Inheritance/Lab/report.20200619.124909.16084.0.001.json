@@ -1,0 +1,457 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200619.124909.16084.0.001.json",
+    "dumpEventTime": "2020-06-19T12:49:09Z",
+    "dumpEventTimeStamp": "1592560149520",
+    "processId": 16084,
+    "threadId": null,
+    "cwd": "C:\\Users\\ilv2sf\\Dev\\JSAdvanced\\09.JS-Advanced-Prototypes-and-Inheritance\\Lab",
+    "commandLine": [
+      "node",
+      "02. Inheriting and Replacing ToString.js"
+    ],
+    "nodejsVersion": "v12.16.3",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.3",
+      "v8": "7.8.279.23-node.35",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.16.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1g",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.3/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Enterprise",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+        "speed": 2112,
+        "user": 1368031,
+        "nice": 0,
+        "sys": 4722515,
+        "idle": 50125015,
+        "irq": 2738625
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+        "speed": 2112,
+        "user": 4332796,
+        "nice": 0,
+        "sys": 1097828,
+        "idle": 50784500,
+        "irq": 35937
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+        "speed": 2112,
+        "user": 1948875,
+        "nice": 0,
+        "sys": 1317125,
+        "idle": 52949125,
+        "irq": 20125
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+        "speed": 2112,
+        "user": 4243453,
+        "nice": 0,
+        "sys": 1115984,
+        "idle": 50855687,
+        "irq": 19109
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+        "speed": 2112,
+        "user": 3828468,
+        "nice": 0,
+        "sys": 1193921,
+        "idle": 51192734,
+        "irq": 36531
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+        "speed": 2112,
+        "user": 1029437,
+        "nice": 0,
+        "sys": 730281,
+        "idle": 54455406,
+        "irq": 19046
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+        "speed": 2112,
+        "user": 1939812,
+        "nice": 0,
+        "sys": 1098656,
+        "idle": 53176640,
+        "irq": 27812
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+        "speed": 2112,
+        "user": 750125,
+        "nice": 0,
+        "sys": 3646203,
+        "idle": 51818781,
+        "irq": 8546
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Ethernet 2",
+        "internal": false,
+        "mac": "00:05:9a:3c:7a:00",
+        "address": "fe80::205:9aff:fe3c:7a00",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 5
+      },
+      {
+        "name": "Ethernet 2",
+        "internal": false,
+        "mac": "00:05:9a:3c:7a:00",
+        "address": "fe80::6387:291e:d648:329d",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 5
+      },
+      {
+        "name": "Ethernet 2",
+        "internal": false,
+        "mac": "00:05:9a:3c:7a:00",
+        "address": "fe80::8753:451f:29ee:c02e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 5
+      },
+      {
+        "name": "Ethernet 2",
+        "internal": false,
+        "mac": "00:05:9a:3c:7a:00",
+        "address": "10.142.169.101",
+        "netmask": "255.255.192.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:14",
+        "address": "fe80::800:27ff:fe00:14",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 20
+      },
+      {
+        "name": "VirtualBox Host-Only Network",
+        "internal": false,
+        "mac": "0a:00:27:00:00:14",
+        "address": "192.168.56.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "4c:1d:96:7b:5b:6a",
+        "address": "fe80::4e1d:96ff:fe7b:5b6a",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 18
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "4c:1d:96:7b:5b:6a",
+        "address": "192.168.0.111",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "SF4-C-00010"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff675a72449",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+11577"
+    },
+    {
+      "pc": "0x00007ff675a769a9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+29337"
+    },
+    {
+      "pc": "0x00007ff675a75828",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24856"
+    },
+    {
+      "pc": "0x00007ff675bad8c2",
+      "symbol": "v8::base::CPU::has_sse+68658"
+    },
+    {
+      "pc": "0x00007ff6763c9bbe",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff6763b1c91",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff67627e1ec",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff67629b0cb",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller+59"
+    },
+    {
+      "pc": "0x00007ff67629b081",
+      "symbol": "v8::internal::Factory::NewFixedArray+65"
+    },
+    {
+      "pc": "0x00007ff6761781bf",
+      "symbol": "v8::debug::Script::GetIsolate+8527"
+    },
+    {
+      "pc": "0x00007ff676028e6a",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+162938"
+    },
+    {
+      "pc": "0x00007ff676816c4d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
+    },
+    {
+      "pc": "0x0000008ea0c441cf",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2730184704,
+    "totalCommittedMemory": 2730184704,
+    "usedMemory": 2695250240,
+    "availableMemory": 16759296,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16759296,
+        "used": 0,
+        "available": 16759296
+      },
+      "old_space": {
+        "memorySize": 1978368,
+        "committedMemory": 1978368,
+        "capacity": 1266608,
+        "used": 1266608,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 430080,
+        "capacity": 158176,
+        "used": 158176,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 266240,
+        "committedMemory": 266240,
+        "capacity": 171760,
+        "used": 171760,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1791131648,
+        "committedMemory": 1791131648,
+        "capacity": 1791107224,
+        "used": 1791107224,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 902512640,
+        "committedMemory": 902512640,
+        "capacity": 902510880,
+        "used": 902510880,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1.171,
+    "kernelCpuSeconds": 0.546,
+    "cpuConsumptionPercent": 171.7,
+    "maxRss": 2742624256,
+    "pageFaults": {
+      "IORequired": 675185,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 1,
+      "writes": 6
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\ilv2sf\\Dev\\JSAdvanced\\09.JS-Advanced-Prototypes-and-Inheritance\\Lab",
+    "=ExitCode": "00000001",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\ilv2sf\\AppData\\Roaming",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "SF4-C-00010",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "HOMEDRIVE": "U:",
+    "HOMEPATH": "\\",
+    "HOMESHARE": "\\\\SF40FS03.EMEA.BOSCH.COM\\ILV2SF$",
+    "IBMLDAP_ALTHOME": "C:\\Program Files\\IBM\\Rational\\DOORS\\9.6\\bin",
+    "LOCALAPPDATA": "C:\\Users\\ilv2sf\\AppData\\Local",
+    "LOGONSERVER": "\\\\FE-BCD119",
+    "ML_DP_SERVER_NG2": "\\\\SI0VM1502.de.bosch.com\\eforms\\WTS\\NG2",
+    "MOZ_LEGACY_PROFILES": "1",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "C:\\Users\\ilv2sf\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\7-Zip;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\Users\\ilv2sf\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\ilv2sf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ilv2sf\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.1.1\\bin;",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "pkidata": "\\\\SF40FS03.EMEA.BOSCH.COM\\ILV2SF$",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e0c",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PyCharm Community Edition": "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.1.1\\bin;",
+    "ReDeploy": "1",
+    "SAPKM_USER_TEMP": "C:\\Users\\ilv2sf\\AppData\\Local",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TELELOGIC_LICENSE_FILE": "1706@rb-lic-telelogic.de.bosch.com",
+    "TEMP": "C:\\Users\\ilv2sf\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\ilv2sf\\AppData\\Local\\Temp",
+    "UATDATA": "C:\\WINDOWS\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77",
+    "USERDNSDOMAIN": "EMEA.BOSCH.COM",
+    "USERDOMAIN": "EMEA",
+    "USERDOMAIN_ROAMINGPROFILE": "EMEA",
+    "USERNAME": "ILV2SF",
+    "USERPROFILE": "C:\\Users\\ilv2sf",
+    "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\SYSFER.DLL",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll"
+  ]
+}
